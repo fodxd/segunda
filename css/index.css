@@ -1,0 +1,20 @@
+.section-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.carousel-1 {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+footer {
+  margin-top: 7rem;
+}
+
+.section-card img {
+  display: flex;
+  justify-content: center;
+  width: 50vh;
+}

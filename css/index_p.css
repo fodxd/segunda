@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap");
+
+body {
+  background-color: black;
+  font-family: "Oswald", sans-serif;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-inicio {
+    width: 100%;
+  }
+}

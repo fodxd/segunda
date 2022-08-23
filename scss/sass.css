@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap");
+img {
+  max-width: 100%; }
+
+.Contacto-grid {
+  display: grid;
+  grid-template-areas: "Imagen Form"; }
+  .Contacto-grid .section-card {
+    grid-area: Imagen;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .Contacto-grid .section-card img {
+      object-fit: cover;
+      display: flex;
+      width: 70vh;
+      max-width: 100%; }
+  .Contacto-grid .formul {
+    grid-area: Form; }
+  .Contacto-grid .forms {
+    flex: 1;
+    padding: 3rem; }
+    .Contacto-grid .forms .h2-contact {
+      display: flex;
+      justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .Contacto-grid {
+      display: grid;
+      grid-template-areas: "Imagen" "Form "; } }
+
+.grid-container {
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "img_main" "main" "carousel" "correo";
+  min-height: 100%; }
+  .grid-container .sect-1 {
+    grid-area: img_main;
+    height: 500px; }
+    .grid-container .sect-1 .carousel-one {
+      height: 100%;
+      justify-content: center; }
+      .grid-container .sect-1 .carousel-one img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%; }
+      @media screen and (max-width: 480px) {
+        .grid-container .sect-1 .carousel-one {
+          object-position: 20% 10%; } }
+  .grid-container .sect-2 {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "buzo_1 buzo_2" "buzo_3 buzo_4";
+    justify-content: space-around; }
+    .grid-container .sect-2 .buzo-1 {
+      grid-area: buzo_1; }
+    .grid-container .sect-2 .buzo-2 {
+      grid-area: buzo_2; }
+    .grid-container .sect-2 .buzo-3 {
+      grid-area: buzo_3; }
+    .grid-container .sect-2 .buzo-4 {
+      grid-area: buzo_4; }
+    @media screen and (max-width: 768px) {
+      .grid-container .sect-2 {
+        grid-template-areas: "buzo_1" "buzo_2" "buzo_3" "buzo_4"; } }
+  .grid-container .sect-3 {
+    grid-area: carousel;
+    width: 100%;
+    margin-top: 8rem; }
+    .grid-container .sect-3 .slide-container {
+      max-width: 1120px;
+      width: 100%;
+      padding: 40px 0; }
+    .grid-container .sect-3 .slide-content {
+      margin: 0 40px;
+      overflow: hidden;
+      border-radius: 25px; }
+    .grid-container .sect-3 .card {
+      border-radius: 25px;
+      background-color: #fff; }
+    .grid-container .sect-3 .image-content,
+    .grid-container .sect-3 .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 14px; }
+    .grid-container .sect-3 .image-content {
+      position: relative;
+      row-gap: 5px;
+      padding: 25px 0; }
+    .grid-container .sect-3 .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 25px 25px 0 25px; }
+    .grid-container .sect-3 .card-image {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background: #fff;
+      padding: 3px; }
+    .grid-container .sect-3 .card-image .card-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid; }
+    .grid-container .sect-3 .name {
+      font-size: 18px;
+      font-weight: 500;
+      color: #333; }
+    .grid-container .sect-3 .description {
+      font-size: 14px;
+      color: #707070;
+      text-align: center; }
+    .grid-container .sect-3 .button {
+      border: none;
+      font-size: 16px;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      margin: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease; }
+    .grid-container .sect-3 .button:hover {
+      background: #ffffff; }
+    .grid-container .sect-3 .swiper-navBtn {
+      transition: color 0.3s ease; }
+    .grid-container .sect-3 .swiper-navBtn::before,
+    .grid-container .sect-3 .swiper-navBtn::after {
+      font-size: 35px; }
+    .grid-container .sect-3 .swiper-button-next {
+      right: 0; }
+    .grid-container .sect-3 .swiper-button-prev {
+      left: 0; }
+    .grid-container .sect-3 .swiper-pagination-bullet {
+      opacity: 1; }
+    .grid-container .sect-3 img {
+      width: 100%;
+      transform: scale(1.68); }
+    @media screen and (max-width: 768px) {
+      .grid-container .sect-3 .slide-content {
+        margin: 0 10px; }
+      .grid-container .sect-3 .swiper-navBtn {
+        display: none; } }
+  .grid-container .sect-4 {
+    grid-area: correo; }
+
+#logo-index {
+  width: 8rem; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: black;
+  font-family: "Oswald", sans-serif; }
+
+@media screen and (min-width: 992px) {
+  .nav-inicio {
+    width: 100%; } }
+
+.section-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.carousel-1 {
+  display: flex;
+  justify-content: center;
+  width: 100vw; }
+
+footer {
+  margin-top: 7rem; }
+
+@media screen and (max-width: 990px) {
+  .navbar-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; } }
+
+@media screen and (max-width: 1200px) {
+  .section-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (max-width: 880px) {
+  .section-1 {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    width: 100%; } }
+
+@media screen and (max-width: 600px) {
+  .section-1 {
+    grid-template-columns: 1fr; } }
+
+.logo-h1 {
+  display: flex;
+  justify-content: center; }
+  .logo-h1 img {
+    width: 500px;
+    margin-bottom: 6rem; }
+  @media screen and (max-width: 600px) {
+    .logo-h1 img {
+      width: 300px;
+      margin-bottom: 5rem; } }
+
+.h1-undef {
+  margin-bottom: 6rem;
+  text-align: center; }
+
+.formul {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center; }
+
+#logo-index {
+  width: 12rem; }
+
+.formul-index {
+  margin: 6rem;
+  box-shadow: 0px 10px 13px -7px white, 3px 12px 14px 5px black; }
+  @media screen and (max-width: 480px) {
+    .formul-index {
+      margin: 2rem; } }
+
+.button-contact {
+  margin-top: 2rem; }
+
+.ul-dropdown {
+  background: #252525; }
+  .ul-dropdown .li-dropdown {
+    color: black; }
+
+@media screen and (max-width: 768px) {
+  .ul-dropdown {
+    background: transparent; }
+    .ul-dropdown .li-dropdown {
+      color: white; } }
